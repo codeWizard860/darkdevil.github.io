@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  >
+    <body style="background-repeat: no-repeat; background-size: cover;" background="https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg" >
+
+    
+    
+    <center>
+    <h1>HELLO LEARNERS..</h1>
+    <h2>
+        Have a question,suggestion,or just want to say hello? We'd love to hear from you!! fill out the form given below,and we'll get back to you as soon as possible..
+    </h2>
+    <h3 style="font-weight: bolder; font-size: xx-large;" >LOGIN FORM</h3>
+    <form onsubmit="sendEmail(); reset();return false;">
+        <input type="Name" placeholder="NAME">
+        <br>
+        <br>
+        <input type="E-mail" placeholder="E-mail">
+        <br>
+        <br>
+        <input type="password " placeholder="Password ">
+        <br>
+         <h4 style="font-weight: bolder; font-size: xx-large;" >COMMENT:</h4>
+         <input type="comment" placeholder="COMMENT">
+         <br>
+         <br>
+         <button>send comment.</button>
+         <br>
+         <br>
+         <h5 style="font-weight: bolder; font-size: xx-large;" >Prefer to DM us on Instagram??</h5>
+         <button ><a href="https://www.instagram.com/s.__shresth?igsh=am52Y200ODIxaGNr">CLICK HERE</a></button>
+    </form>
+    
+</center>
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Host : "smtp.gmail.com",
+    Username : "shresthsaxena834@gmail.com",
+    Password : "shresth@860",
+    To : 'saxenashresth834@gmail.com',
+    From : Document.getElementsById("Email").value,
+    Subject : "new contact form enquiry",
+    Body : "NAME:" + document.getElementById("name").value
+    +"<br>Email:" + document.getElementById("email").value
+    +"<br>comment:" + document.getElementById("comment").value
+}. then(
+  message => alert("message sent successfully")
+);
+    
+</script>
+</body>
+</html>
